@@ -1,49 +1,49 @@
 
-How to install & run project?
+# How to install & run project?
 
- > Node @18.14.0
- > Run command: 'npm install'
- > Create .env file with configuration
- > Run command: 'npm run dev'
+ - Node @18.14.0  
+ - Run command: 'npm install'  
+ - Create .env file with configuration  
+ - Run command: 'npm run dev'  
 
 
 
-Project design.
+# Project design.
 
- project-root/
- ├─src/
- │ │
- │ ├── api/
- │ │   ├── controllers/
- │ │   │   ├── auth.controller.ts
- │ │   │   ├── task.controller.ts
- │ │   │
- │ │   ├── services/
- │ │       ├── auth.service.ts
- │ │       ├── task.service.ts
- │ │
- │ ├── auth/
- │ │   ├── jwt.strategy.ts
- │ │   ├── jwt.guard.ts
- │ │   ├── jwt.module.ts
- │ │   ├── auth.module.ts
- │ │
- │ ├── module/
- │ │   ├── user.entity.ts
- │ │   ├── user.dto.ts
- │ │   ├── task.entity.ts
- │ │   ├── task.dto.ts
- │ │
- │ ├── config/
- │ │   ├── database.config.ts
- │ │   ├── config.module.ts
- │ │
- │ ├── app.module.ts
- │ ├── app.ts
- ├── .env
- ├── package.json
- ├── package-lock.json
- ├── tsconfig.json
+ project-root/  
+ ├─src/  
+ │ │  
+ │ ├── api/  
+ │ │   ├── controllers/  
+ │ │   │   ├── auth.controller.ts  
+ │ │   │   ├── task.controller.ts  
+ │ │   │  
+ │ │   ├── services/  
+ │ │       ├── auth.service.ts  
+ │ │       ├── task.service.ts  
+ │ │  
+ │ ├── auth/  
+ │ │   ├── jwt.strategy.ts  
+ │ │   ├── jwt.guard.ts  
+ │ │   ├── jwt.module.ts  
+ │ │   ├── auth.module.ts  
+ │ │  
+ │ ├── module/  
+ │ │   ├── user.entity.ts  
+ │ │   ├── user.dto.ts  
+ │ │   ├── task.entity.ts  
+ │ │   ├── task.dto.ts  
+ │ │  
+ │ ├── config/  
+ │ │   ├── database.config.ts  
+ │ │   ├── config.module.ts  
+ │ │  
+ │ ├── app.module.ts  
+ │ ├── app.ts  
+ ├── .env  
+ ├── package.json  
+ ├── package-lock.json  
+ ├── tsconfig.json  
 
 
  
