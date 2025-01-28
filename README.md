@@ -1,5 +1,5 @@
 
-# How to install & run project?
+## How to install & run project?
 
  - Node @18.14.0  
  - Run command: 'npm install'  
@@ -8,7 +8,7 @@
 
 
 
-# Project design.
+## Project design.
 
  project-root/  
  ├─src/  
@@ -47,7 +47,7 @@
 
 
  
-Postman collection:
+## Postman collection:
 
  1. GET: http://localhost:3000/auth/test
  2. POST: http://localhost:3000/auth/register
