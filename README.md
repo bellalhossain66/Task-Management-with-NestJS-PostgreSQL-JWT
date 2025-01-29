@@ -1,10 +1,17 @@
+## Task Management API (NestJS + PostgreSQL)  
 
-## How to install & run project?
+## Project Overview  
+A secure task management API built using NestJS and PostgreSQL with JWT-based authentication.  
 
- - Node @18.14.0  
- - Run command: 'npm install'  
- - Create .env file with configuration  
- - Run command: 'npm run dev'  
+
+## How to install & run project?  
+
+ - Node @18.14.0   
+ - Run command: 'npm install'   
+ - Create .env file with configuration   
+ - Run command: 'npm run dev'   
+ - PostgreSQL 14+  
+ - 'npm run testAuth' for test    
 
 
 
@@ -49,14 +56,14 @@
  
 ## Postman collection:
 
- 1. GET: http://localhost:3000/auth/test
- 2. POST: http://localhost:3000/auth/register
- 3. POST: http://localhost:3000/auth/login
- 4. POST: http://localhost:3000/task
- 5. GET: http://localhost:3000/task
- 6. GET: http://localhost:3000/task/1
- 7. PATCH: http://localhost:3000/task/1
- 8. DELETE: http://localhost:3000/task/1
- 9. GET: http://localhost:3000/task/get-all-tasks?page=1&limit=5
- 10. GET: http://localhost:3000/task/get-all-tasks?status=IN_PROGRESS
- 11. GET: http://localhost:3000/task/get-all-tasks?status=DONE&page=2&limit=5
+ - GET: http://localhost:3000/auth/test  
+ - POST: http://localhost:3000/auth/register  
+ - POST: http://localhost:3000/auth/login  
+ - POST: http://localhost:3000/task  
+ - GET: http://localhost:3000/task  
+ - GET: http://localhost:3000/task/1  
+ - PATCH: http://localhost:3000/task/1  
+ - DELETE: http://localhost:3000/task/1  
+ - GET: http://localhost:3000/task/get-all-tasks?page=1&limit=5  
+ - GET: http://localhost:3000/task/get-all-tasks?status=IN_PROGRESS  
+ - GET: http://localhost:3000/task/get-all-tasks?status=DONE&page=2&limit=5  

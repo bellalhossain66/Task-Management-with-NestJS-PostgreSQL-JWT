@@ -43,16 +43,10 @@ export class TasksService {
       .orderBy('task.created_at', 'DESC')
       .skip((page - 1) * limit)
       .take(limit);
-
     if (status) {
       query.andWhere('task.status = :status', { status });
     }
     const [tasks, total] = await query.getManyAndCount();
-    return {
-      total,
-      page,
-      limit,
-      tasks,
-    };
+    return {total,page,limit,tasks};
   }
 }
