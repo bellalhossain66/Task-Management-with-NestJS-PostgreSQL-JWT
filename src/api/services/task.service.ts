@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Task } from '../../module/task.entity';
+import { Task, TaskStatus } from '../../module/task.entity';
 import { CreateTaskDto } from '../../module/task.dto';
 
 @Injectable()
@@ -35,5 +35,24 @@ export class TasksService {
   async deleteTask(taskId: number, userId: number): Promise<void> {
     const task = await this.getTaskById(taskId, userId);
     await this.taskRepository.remove(task);
+  }
+
+  async getUserTasksByFilter(userId: number, status?: TaskStatus, page: number = 1, limit: number = 10) {
+    const query = this.taskRepository.createQueryBuilder('task')
+      .where('task.user_id = :userId', { userId })
+      .orderBy('task.created_at', 'DESC')
+      .skip((page - 1) * limit)
+      .take(limit);
+
+    if (status) {
+      query.andWhere('task.status = :status', { status });
+    }
+    const [tasks, total] = await query.getManyAndCount();
+    return {
+      total,
+      page,
+      limit,
+      tasks,
+    };
   }
 }

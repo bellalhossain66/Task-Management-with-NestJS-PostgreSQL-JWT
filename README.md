@@ -19,8 +19,8 @@
  │ │   │   ├── task.controller.ts  
  │ │   │  
  │ │   ├── services/  
- │ │       ├── auth.service.ts  
- │ │       ├── task.service.ts  
+ │ │        ├── auth.service.ts  
+ │ │        ├── task.service.ts  
  │ │  
  │ ├── auth/  
  │ │   ├── jwt.strategy.ts  
@@ -52,8 +52,11 @@
  1. GET: http://localhost:3000/auth/test
  2. POST: http://localhost:3000/auth/register
  3. POST: http://localhost:3000/auth/login
- 3. POST: http://localhost:3000/task
- 3. GET: http://localhost:3000/task
- 3. GET: http://localhost:3000/task/1
- 3. PATCH: http://localhost:3000/task/1
- 3. DELETE: http://localhost:3000/task/1
+ 4. POST: http://localhost:3000/task
+ 5. GET: http://localhost:3000/task
+ 6. GET: http://localhost:3000/task/1
+ 7. PATCH: http://localhost:3000/task/1
+ 8. DELETE: http://localhost:3000/task/1
+ 9. GET: http://localhost:3000/task/get-all-tasks?page=1&limit=5
+ 10. GET: http://localhost:3000/task/get-all-tasks?status=IN_PROGRESS
+ 11. GET: http://localhost:3000/task/get-all-tasks?status=DONE&page=2&limit=5
